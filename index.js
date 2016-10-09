@@ -8,6 +8,8 @@ var request = require('request')
 // var request = require('request');
 var app = express()
 
+var token = "EAANmgAIhufcBADY8FJ9LOuZACv0BVXad76Nt1ZAKxgvDGINfDqZB26MmZBSZBEo2G0qmu4V4iZAIltFt29F26t4EhLsi7fLHNiFgvZC8DyvBKDDJBLxDMqt8ZAiTyJSXG7nPx3agbpvGZABZCqXZA56mqQAVIA0WsRJUsQuAvtxED9ojAZDZD"
+
 app.set('port', (process.env.PORT || 5000))
 
 // Process application/x-www-form-urlencoded
@@ -59,7 +61,7 @@ app.post('/webhook/', function (req, res) {
     res.sendStatus(200)
 })
 
-var token = " enter token here"
+var token = "parv_token"
 
 // function to echo back messages - added by Stefan
 
