@@ -8,7 +8,7 @@ var request = require('request')
 // var request = require('request');
 var app = express()
 
-var token = "EAANmgAIhufcBADY8FJ9LOuZACv0BVXad76Nt1ZAKxgvDGINfDqZB26MmZBSZBEo2G0qmu4V4iZAIltFt29F26t4EhLsi7fLHNiFgvZC8DyvBKDDJBLxDMqt8ZAiTyJSXG7nPx3agbpvGZABZCqXZA56mqQAVIA0WsRJUsQuAvtxED9ojAZDZD"
+//var token = "EAANmgAIhufcBADY8FJ9LOuZACv0BVXad76Nt1ZAKxgvDGINfDqZB26MmZBSZBEo2G0qmu4V4iZAIltFt29F26t4EhLsi7fLHNiFgvZC8DyvBKDDJBLxDMqt8ZAiTyJSXG7nPx3agbpvGZABZCqXZA56mqQAVIA0WsRJUsQuAvtxED9ojAZDZD"
 
 app.set('port', (process.env.PORT || 5000))
 
@@ -61,7 +61,7 @@ app.post('/webhook/', function (req, res) {
     res.sendStatus(200)
 })
 
-var token = "parv_token"
+var token = "EAANmgAIhufcBADY8FJ9LOuZACv0BVXad76Nt1ZAKxgvDGINfDqZB26MmZBSZBEo2G0qmu4V4iZAIltFt29F26t4EhLsi7fLHNiFgvZC8DyvBKDDJBLxDMqt8ZAiTyJSXG7nPx3agbpvGZABZCqXZA56mqQAVIA0WsRJUsQuAvtxED9ojAZDZD"
 
 // function to echo back messages - added by Stefan
 
