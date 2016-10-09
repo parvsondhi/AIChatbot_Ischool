@@ -61,7 +61,7 @@ app.post('/webhook/', function (req, res) {
     res.sendStatus(200)
 })
 
-var token = "EAANmgAIhufcBADY8FJ9LOuZACv0BVXad76Nt1ZAKxgvDGINfDqZB26MmZBSZBEo2G0qmu4V4iZAIltFt29F26t4EhLsi7fLHNiFgvZC8DyvBKDDJBLxDMqt8ZAiTyJSXG7nPx3agbpvGZABZCqXZA56mqQAVIA0WsRJUsQuAvtxED9ojAZDZD"
+var token = "EAARuBWmT3XUBAHUDuZAMZADvy1ZC5ZA0KxfDlKsZCRj9rkofkjELSF6rJ44GsNVrztWzxHh18ZCiWbIQcmyyaaWCZAO2zxLJcKXsmf7OPbpYFe3m2YXfeSCukRIFxKcqsaWCxItkg43ZAN4ZC0ETGzZCc3od6xUwKjaRX7blKJhDlBjAZDZD"
 
 // function to echo back messages - added by Stefan
 
@@ -70,7 +70,7 @@ function sendTextMessage(sender, text) {
         text:text
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/...',
+        url: 'https://graph.facebook.com/v2.6/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -151,7 +151,7 @@ function sendGenericMessage(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/...',
+        url: 'https://graph.facebook.com/v2.6/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
